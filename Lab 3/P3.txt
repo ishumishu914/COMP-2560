@@ -1,0 +1,4 @@
+filesize1v.c has a variable ch of type unsigned char and unsigned byte value 
+ranges from 0 to 255. Since the exit condition of the do-while loop is that ch 
+must read EOF (i.e value is -1) the variable ch never reads the EOF and thus 
+loops infinitely.

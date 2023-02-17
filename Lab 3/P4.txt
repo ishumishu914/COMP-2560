@@ -1,0 +1,10 @@
+a) size of filesize2.c -> 418 bytes
+b) estimate of size of filesize2.c to be given by program -> 10 bytes
+c) size of filesize2.c shown by given by program -> 10 bytes
+
+Explanation:
+fseek(fd, 10L, SEEK_SET) moves the file offset 10 bytes from the beginning 
+of file, and then putc() writes '-1' at the offset set by fseek(), rewind() 
+then moves offset back to beginning of file. As the loop reads through each 
+characters and reaches -1 written previously, it is detected as EOF and program ends.
+This results in any file size to be shown as 10 rather than its original size.
