@@ -1,0 +1,8 @@
+at first the parent ID is shown
+as fork is called thrice the total child process produced is 8
+
+1st child is created 1st fork
+2nd is by 2nd fork
+3rd is by 3rd fork
+4th is by 2nd fork
+5th to 7th by 3rd fork 
