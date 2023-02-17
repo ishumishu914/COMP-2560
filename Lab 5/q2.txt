@@ -1,0 +1,6 @@
+Since child processes make copies of parent process components, when child is forked
+it inherits a copy of the file descriptor. 
+Meaning whatever is done with the file descriptor remains unaffected
+for the parent process.
+If the descriptor is closed in child, it will only close for the child but not for
+the parent and vice versa.
