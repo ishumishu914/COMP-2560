@@ -1,0 +1,1 @@
+As the values of fd1 & fd2 are different, open/read or writing is to file becomes impossible
